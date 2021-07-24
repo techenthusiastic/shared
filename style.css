@@ -1,0 +1,23 @@
+main.container-fluid {
+	height: 100vh;
+}
+.container-fluid > div {
+	height: 100%;
+}
+#login-bg-cont,
+#login-bg-cont img {
+	max-height: 100%;
+	max-width: 100%;
+}
+#login-form.card input {
+	border: 0;
+	box-shadow: none;
+	background-color: rgb(240, 240, 240);
+}
+#login-form .card-body div:nth-child(2) {
+	border: 1px solid gainsboro;
+}
+#login-form button {
+	transform-origin: center center;
+	transform: scale(1.05, 1.05);
+}
