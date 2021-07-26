@@ -1,15 +1,12 @@
 main.container-fluid {
 	height: 100vh;
 }
-.container-fluid > div {
-	height: 100%;
-}
 #login-bg-cont,
 #login-bg-cont img {
 	max-height: 100%;
 	max-width: 100%;
 }
-#login-form.card input {
+#login-form .form-floating input {
 	border: 0;
 	box-shadow: none;
 	background-color: rgb(240, 240, 240);
