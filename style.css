@@ -7,15 +7,30 @@ main.container-fluid {
 	max-width: 100%;
 	height: 100%;
 }
-#login-form .form-floating input {
+#login-form .form-floating input,
+#login-form .input-group input {
 	border: 0;
 	box-shadow: none;
 	background-color: rgb(240, 240, 240);
+	font-family: Segoe UI;
 }
-#login-form .card-body div:nth-child(2) {
+#login-form .card-body .text-center {
 	border: 1px solid gainsboro;
 }
 #login-form button {
 	transform-origin: center center;
 	transform: scale(1.05, 1.05);
+	font-family: "Poppins", sans-serif;
+	font-size: large;
+	letter-spacing: 1.5px;
+}
+#pswd-icon-btn {
+	max-height: 100%;
+	background-color: rgb(240, 240, 240);
+}
+#pswd-icon-btn img {
+	transform: scale(0.6);
+}
+#loginStatus {
+	display: none;
 }
