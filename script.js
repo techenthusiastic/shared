@@ -23,6 +23,7 @@ login_form.addEventListener("submit", async (event) => {
 			method: "POST",
 			body: formBody,
 			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			credentials: "include",
 		});
 		const resp = await promise.json();
 		if (promise.status === 200 && promise.ok === true) {
@@ -30,6 +31,8 @@ login_form.addEventListener("submit", async (event) => {
 				"alert-success",
 				"&starf; Login Success - wait till you are redirected."
 			);
+			console.log(resp.accessToken);
+			console.log(resp.refreshToken);
 		} else
 			showLoginStatus(
 				"alert-danger",

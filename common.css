@@ -1,5 +1,11 @@
+:root {
+	--violet: rgba(125, 67, 152, 1);
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
 .color-violet {
-	color: rgba(125, 67, 152, 1);
+	color: #7d4398;
 }
 .bg-vio {
 	background-color: rgba(125, 67, 152, 1);

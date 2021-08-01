@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="navBar.css">
+</head>
+
+<body>
+    <main class="d-inline-flex" id="studentDash">
+        <div class="bg-vio" id="sideNavBar">
+            <nav class="navbar d-flex flex-column justify-content-center align-items-center m-0 p-0 ">
+                <a class="navbar-brand" href="#">
+                    <img src="speedLabsLogo.png" alt="" srcset="">
+                </a>
+                <ul class="nav flex-column">
+                    <li class="nav-item active"><img src="icon/icon-dashboard.svg" alt=""
+                            srcset=""><span>Dashboard</span></li>
+                    <li class="nav-item"><img src="icon/icon-students.svg" alt="" srcset=""><span>Students</span></li>
+                    <li class="nav-item"><img src="icon/icon-report.svg" alt="" srcset=""><span>Report</span></li>
+                    <li class="nav-item"><img src="icon/icon-recruitment.svg" alt="" srcset=""><span>Recuitment</span>
+                    </li>
+                    <li class="nav-item"><img src="icon/icon-settings.svg" alt="" srcset=""><span>Settings</span></li>
+                    <li class="nav-item"><img src="icon/icon-logout.svg" alt="" srcset=""><span>Log out</span></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="dashboard-cont">
+            <div class="d-flex justify-content-between px-3 py-2" id="top-navBar">
+                <div class="d-flex align-items-center">
+                    <img src="icon/nav-toggle-close.svg" alt="" data-isOpen="true" height="20" width="20"
+                        onclick="toggleSideBar(event)">
+                </div>
+                <div class="d-inline-flex align-items-center">
+                    <span></span>
+                    <span>Alexa John</span>
+                    <img src="icon/user-icon.svg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="px-3 py-1" id="dashboard-main">
+                <div class="my-2" id="dashboard-dir">
+                    <h3 class="m-0 p-0">Dashboard</h3>
+                    <p class="m-0 p-0 text-muted">Home / Project Dashboard</p>
+                </div>
+                <div class="dash-rows d-flex justify-content-between" id="row1">
+                    <div class="shadow p-2 bg-white rounded">
+                        <h4 class="m-0 p-0">Time Sheet</h4>
+                        <div class="m-1 p-0 str-line-hr"></div>
+                        <table class="table table-striped table-hover">
+                            <thead class="text-light bg-vio">
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Clock in</th>
+                                    <th scope="col">Clock out</th>
+                                    <th scope="col">Total working</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15/06/2021</td>
+                                    <td>10:30</td>
+                                    <td>10:30</td>
+                                    <td>8.00</td>
+                                </tr>
+                                <tr>
+                                    <td>15/06/2021</td>
+                                    <td>10:30</td>
+                                    <td>10:30</td>
+                                    <td>8.00</td>
+                                </tr>
+                                <tr>
+                                    <td>15/06/2021</td>
+                                    <td>10:30</td>
+                                    <td>10:30</td>
+                                    <td>8.00</td>
+                                </tr>
+                                <tr>
+                                    <td>15/06/2021</td>
+                                    <td>10:30</td>
+                                    <td>10:30</td>
+                                    <td>8.00</td>
+                                </tr>
+                                <tr>
+                                    <td>15/06/2021</td>
+                                    <td>10:30</td>
+                                    <td>10:30</td>
+                                    <td>8.00</td>
+                                </tr>
+                                <tr>
+                                    <td>15/06/2021</td>
+                                    <td>10:30</td>
+                                    <td>10:30</td>
+                                    <td>8.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="shadow p-2 bg-white rounded">
+                        <h4 class="m-0 p-0">Applications</h4>
+                        <div class="m-1 p-0 str-line-hr"></div>
+                        <table class="table table-striped table-hover">
+                            <thead class="text-light bg-vio">
+                                <tr>
+                                    <th scope="col">Sl. No.</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Applicant's Name</th>
+                                    <th scope="col">Designation</th>
+                                    <th scope="col">Email Id</th>
+                                    <th scope="col">Contact No</th>
+                                    <th scope="col">Education</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>29/01/2021</td>
+                                    <td>Bhupesh Kumar</td>
+                                    <td>UI/UX Lead</td>
+                                    <td>bhupesh@spl.com</td>
+                                    <td>1234567890</td>
+                                    <td>M.B.A.</td>
+                                    <td>Actd</td>
+                                    <td>none</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="dash-rows d-flex justify-content-between mt-4">
+                    <div class="shadow p-2 bg-white rounded">
+                        <h4 class="m-0 p-0">Chart 1</h4>
+                        <div class="m-1 p-0 str-line-hr"></div>
+                        <div class="chart-holder d-flex justify-content-center align-items-center">
+                            <img class="p-3" src="icon/chart-1.svg" alt="" srcset="" height="200">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="shadow p-2 bg-white rounded">
+                            <h4 class="m-0 p-0">Chart 2</h4>
+                            <div class="m-1 p-0 str-line-hr"></div>
+                            <div class="chart-holder d-flex justify-content-center align-items-center">
+                                <img src="icon/chart-2.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="shadow p-2 bg-white rounded">
+                            <h4 class="m-0 p-0">Chart 2</h4>
+                            <div class="m-1 p-0 str-line-hr"></div>
+                            <div class="chart-holder d-flex justify-content-center align-items-center">
+                                <img src="icon/chart-2.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--  -->
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

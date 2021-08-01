@@ -5,19 +5,43 @@ main.container-fluid {
 #login-bg-cont img {
 	max-height: 100%;
 	max-width: 100%;
+}
+#login-bg-cont {
 	height: 100%;
+}
+#login-form {
+	background-color: #f5f5f5;
+	border: none;
+	border-radius: 10px;
+	/* overflow: hidden; */
+	/* border: 2px solid red; */
+}
+/* Form Heading */
+#login-form > h3 {
+	color: #616161;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#login-form .card-subtitle {
+	color: #adaeb2;
+	font-family: "Poppins", sans-serif;
+}
+/* Form Input */
+#login-form .card-body > div {
+	background-color: rgb(240, 240, 240);
 }
 #login-form .form-floating input,
 #login-form .input-group input {
 	border: 0;
 	box-shadow: none;
 	background-color: rgb(240, 240, 240);
-	font-family: Segoe UI;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-#login-form .card-body .text-center {
+#login-form .card-body .hr-like-line {
+	width: 100%;
+	background-color: gainsboro;
 	border: 1px solid gainsboro;
 }
-#login-form button {
+#login-form > button {
 	transform-origin: center center;
 	transform: scale(1.05, 1.05);
 	font-family: "Poppins", sans-serif;
@@ -25,12 +49,46 @@ main.container-fluid {
 	letter-spacing: 1.5px;
 }
 #pswd-icon-btn {
-	max-height: 100%;
-	background-color: rgb(240, 240, 240);
+	box-shadow: none;
 }
 #pswd-icon-btn img {
 	transform: scale(0.6);
 }
 #loginStatus {
 	display: none;
+}
+/* Below Login Button */
+#rem-login {
+	background-color: #dddddd;
+	border: 0;
+	outline: 0;
+	box-shadow: none;
+	transform: scale(1.2);
+}
+#login-form label[for="rem-login"] {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 500;
+}
+/* Login Form - Footer - card-footer */
+#login-form .card-footer {
+	font-family: "Poppins", sans-serif;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+#login-form a {
+	text-decoration: none;
+	color: #afafb2;
+	letter-spacing: 1px;
+}
+@media screen and (max-width: 768px) {
+	#login-bg-cont {
+		height: unset;
+	}
+}
+@media screen and (max-width: 480px) {
+	#login-form .card-body {
+		margin-left: 0.5rem !important;
+		margin-right: 0.5rem !important;
+		padding: 0.5rem !important;
+	}
 }
